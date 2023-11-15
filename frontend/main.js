@@ -1,5 +1,5 @@
 (async function getHello() {
-  const response = await fetch("http://localhost:8080/hello");
+  const response = await fetch("/hello");
   const message = await response.text();
   document.querySelector('#app').innerHTML = `
     <div>
